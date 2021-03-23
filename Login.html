@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    
+    <title>Login</title>
+    <script>
+        function login() {
+        //    alert("Working")
+         var textRef = document.getElementById('text')
+         var passwordRef = document.getElementById('password')
+          
+             var textValue = textRef.value
+             var passwordValue = passwordRef.value
+
+             var info = {
+                  "name": textValue,
+                  "password":passwordValue
+                }
+
+                console.log(info)
+
+
+             console.log("User Name: ",textValue)
+             console.log("Password: ",passwordValue)
+
+
+              textRef.value =''
+              passwordRef.value=''
+               
+              
+        }
+    </script>
+</head>
+<body>
+      <center>
+          <h2>Login Form</h2>
+          <p>
+              <label>User Name: </label>
+              <input type="password" id="text" />
+          </p>
+          <p>
+            <label>Password: </label>
+            <input type="password" id="password" />
+        </p> 
+        <button onclick="login()" >Login</button>
+      </center>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+   <script>
+       function fn() {
+          var pRef = document.createElement('p')
+        var content =  document.createTextNode("Hello World")
+        pRef.append(content)
+      var bodyRef =  document.querySelector('body')
+      bodyRef.appendChild(pRef)
+       }
+   </script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome to A2N Academy</h2>
+    <button onclick="fn()">Create p Element</button>
+    
+</body>
+</html>
