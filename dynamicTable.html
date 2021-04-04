@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+   <script>
+       function fnTable() {
+          var nameRef = document.getElementById('name');
+          var passwordRef = document.getElementById('password');
+          var emailRef = document.getElementById('email');
+          var locationRef = document.getElementById('location');
+
+         var nameValue = nameRef.value
+         var passwordValue = passwordRef.value
+         var emailValue = emailRef.value;
+         var locationValue = locationRef.value
+
+           var tableRef =  document.createElement('table')
+        var trRef1 =   document.createElement('tr')
+        var trRef2 =   document.createElement('tr')
+
+        var th1 = document.createElement('th')
+        var th2 = document.createElement('th')
+        var th3 = document.createElement('th')
+
+            var td1 = document.createElement('td')
+            var td2 = document.createElement('td')
+            var td3 = document.createElement('td')
+
+       var thContent1 =  document.createTextNode("NAME")
+       var thContent2 =  document.createTextNode("EMAIL ID")
+       var thContent3 =  document.createTextNode("LOCATION")
+
+          th1.append(thContent1)
+          th2.append(thContent2)
+          th3.append(thContent3)
+
+           td1.append(nameValue)
+           td2.append(emailValue)
+           td3.append(locationValue)
+
+          trRef1.appendChild(th1)
+          trRef1.appendChild(th2)
+          trRef1.appendChild(th3)
+
+          trRef2.appendChild(td1)
+          trRef2.appendChild(td2)
+          trRef2.appendChild(td3)
+
+
+          tableRef.appendChild(trRef1)
+          tableRef.appendChild(trRef2)
+
+          tableRef.setAttribute('border','1')
+          document.querySelector('body').appendChild(tableRef)
+
+          nameRef.value = ''
+          passwordRef.value=""
+          emailRef.value = ''
+          locationValue = ''
+       }
+   </script>
+    <title>Dynamic Table</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <p>
+          Name:  <input type="text" id="name" />
+        </p>
+        <p>
+            Password:  <input type="password" id="password" />
+          </p>
+          <p>
+            Email:  <input type="email" id="email" />
+          </p>
+          <p>
+            Location:  <input type="text" id="location" />
+          </p>
+          <button onclick="fnTable()">Submit</button>
+          <table>
+            <tr>
+              <th></th>
+            </tr>
+          </table>
+    </div>
+</body>
+</html>

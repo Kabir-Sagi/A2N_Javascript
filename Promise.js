@@ -1,7 +1,11 @@
 function fn() {
-    return  new Promise(function(resolve,reject){
 
-        resolve("Sagar")
+
+
+
+    return  new Promise(function(resolve,reject){
+           resolve("sagar")
+        // reject("error")
          
     })
     

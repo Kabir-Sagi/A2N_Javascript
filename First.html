@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <script>
+          function fn() {
+                 var h2Ref =  document.getElementById('heading')
+                  var h2Content = h2Ref.innerText
+                 h2Ref.style.color = "red"
+                   
+              console.log(h2Content)
+
+              document.getElementById('pref').style.textDecoration = "italic"
+          }
+        
+        </script>
+</head>
+<body>
+     <h2 id="heading">Welcome to Javascript</h2>
+     <div>
+         <p id="pref">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque tempore et dolorum maxime excepturi officia incidunt eveniet nam quas.</p>
+     </div>
+     <button onclick="fn()">Call Function</button>
+</body>
+</html>

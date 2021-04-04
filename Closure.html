@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script>
+        
+        function fn() {
+            var i = 0
+           return function f2(){
+            
+                i = i + 1
+                console.log(i)
+           }
+
+        }
+         function f1() {
+                i= 5
+         }
+         var f2 = fn()
+    </script>
+</head>
+<body>
+    <button onclick="f2()">Click Me</button>
+    <button onclick="f1()">Dont click Me</button>
+</body>
+</html>
